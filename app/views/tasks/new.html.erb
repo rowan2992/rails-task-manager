@@ -1,0 +1,12 @@
+<div class="form-group">
+<%= simple_form_for(@task) do |f| %>
+<%= f.input :name %>
+<%= f.input :details %>
+<%= f.input :completed, collection: [true, false] %>
+<%= f.submit class: "btn btn-info" %>
+
+<% end %>
+</div>
+
+
+<h3><%= link_to 'Please take me back', home_path %></h3>
