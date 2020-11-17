@@ -1,0 +1,9 @@
+<div class="form-group">
+<%= simple_form_for(@task) do |f| %>
+<%= f.input :name %>
+<%= f.input :details %>
+<%= f.input :completed, collection: [true, false] %>
+<%= f.submit class: "btn btn-info" %>
+
+<% end %>
+</div>
